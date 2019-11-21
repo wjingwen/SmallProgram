@@ -1,0 +1,26 @@
+/* pages/shop/shop.wxss */
+.container{background: #f2f2f2}
+.swiper-nav{background-color: #f96c04;white-space: nowrap;}
+.swiper-nav .item-nav{position: relative;padding: 30rpx 32rpx;color: #e9e5e2;font-size: 35rpx;cursor: pointer;display: inline-block}
+.swiper-nav .active{color: #fff;font-size: 40rpx}
+.bigclassshop{width: 98%;margin: 0 auto;background: #fff;border-bottom-right-radius: 20rpx;border-bottom-left-radius: 20rpx}
+.bigclassshop .classshop{display: flex;flex-direction: row;justify-content: center;flex-wrap: wrap;margin-top: 30rpx}
+.bigclassshop .classshop .classitem{width: 20%;text-align: center;display: block;margin-bottom: 30rpx}
+.bigclassshop .classshop .classitem image{width: 90rpx;height: 90rpx}
+.bigclassshop .classshop .classitem text{display: block;width: 100%}
+.adimg{width: 98%;margin: 20rpx auto;}
+.adimg image{width: 100%;height: 300rpx;border-radius: 10rpx}
+.hottitle{text-align: center;margin-bottom: 30rpx}
+.shoplist{justify-content: space-between;display: flex;flex-wrap: wrap;width: 96%;margin: 0 auto}
+.shoplist .shopitem{width: 49%;background: #fff;margin-bottom: 30rpx;border-radius: 10rpx;overflow: hidden;position: relative;padding-bottom: 20rpx}
+.shoplist .shopitem image{width: 100%;height: 300rpx;}
+.shoplist .shopitem .tiptext{position: absolute;color:#fff;background: #f20b62;top: 280rpx;left: 20rpx;font-size: 25rpx;display: block;border-radius: 10rpx;padding: 5rpx 15rpx;font-weight: bold}
+.shoplist .shopitem .shoptitleline{font-size: 30rpx;color: #000;font-weight: bold;height: 40rpx;line-height: 40rpx;overflow: hidden;text-overflow: ellipsis;white-space:nowrap;margin-top: 20rpx;padding: 0 20rpx }
+.shoplist .shopitem .shoptitle{font-size: 30rpx;color: #000;font-weight: bold;line-height: 30rpx;overflow: hidden;text-overflow: ellipsis;white-space:nowrap;padding: 0 20rpx ;margin-top: 10rpx}
+.shoplist .shopitem .shoptitletip{height: 40rpx;margin-left: 20rpx}
+.shoplist .shopitem .shoptitletip text{font-size: 20rpx;border: 1px solid #7bc7fa;color: #7bc7fa;padding: 2rpx 8rpx;display: inline-block;margin-right: 10rpx;border-radius: 10rpx;}
+.shoplist .shopitem .shopprice{margin-left: 20rpx}
+.shoplist .shopitem .shopprice .cheng{color: #fc6806}
+.shoplist .shopitem .shopprice .rmbico{font-size: 20rpx}
+.shoplist .shopitem .shopprice .rmbprice{font-size: 30rpx}
+.shoplist .shopitem .shoppaynum{color: #666;font-size: 20rpx;padding-left: 10rpx;border-radius: 5rpx;padding: 1rpx 5rpx;display: inline-block}

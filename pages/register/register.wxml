@@ -1,0 +1,19 @@
+<!--pages/register/register.wxml-->
+<!--pages/login/login.wxml-->
+<view class="login">
+  <view class="title">注册</view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="inputstyle">
+      <view class="text">账户</view>
+      <view><input type="text" placeholder="请输入账号"/></view>
+    </view>
+    <view class="inputstyle">
+      <view class="text">密码</view>
+      <view><input type="password" placeholder="请输入密码"/></view>
+      <view><button type="primary" size="mini" bindtap="primary">获取验证码</button></view>
+    </view>
+    <view class="loginbtn">
+      <button type="primary" size="default" bindtap="primary"> 注册 </button>
+    </view>
+  </form>
+</view>

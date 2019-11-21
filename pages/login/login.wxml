@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+  <view class="title">登录</view>
+  <form bindsubmit="formSubmit">
+    <view class="inputstyle">
+      <view class="text">账户</view>
+      <view><input type="text"  name="username" value="{{username}}" placeholder="请输入账号"/></view>
+    </view>
+    <view class="inputstyle">
+      <view class="text">密码</view>
+      <view><input type="text" password="true" name="password" value="{{password}}" placeholder="请输入密码"/></view>
+    </view>
+    <view class="loginbtn">
+      <button type="primary" formType="submit" size="default"> 登录 </button>
+    </view>
+  </form>
+  <view class="center">还没有账号？<navigator url="/pages/register/register">注册</navigator></view>
+  <view class="wxlogin"><button plain="true" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo"><image src="../static/img/wxlogin.png"></image> 微信授权登录 </button></view>
+</view>

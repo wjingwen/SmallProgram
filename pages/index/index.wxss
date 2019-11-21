@@ -1,0 +1,34 @@
+/* 滚动样式 */
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+.swiper-item image{width: 100%}
+/* 悬浮导航 */
+.barbignav{background: #f7f7f7;padding-bottom: 30rpx}
+.barnav{background: #FFFFFF;width: 90%;margin: -30rpx auto 0;height: 150rpx;border-radius: 15rpx;box-shadow: 1px -1px 3px #999;display: flex;flex-direction: row;justify-content:center;position: relative;}
+.navitem{display: block;width: 25%;text-align: center}
+.navitem image{width:80rpx;height: 80rpx;margin-top: 5rpx}
+.navitem .textnav{font-size: 30rpx}
+.navitem navigator{display: inline-block;height: 100%;width: 100%}
+.newshop{width: 100%;height: 60rpx;line-height: 60rpx}
+.newshop .line{width: 5px;height: 40rpx;background: green;margin-top: 10rpx;margin-left: 20rpx;float: left}
+.texttitle{float: left;margin-left: 20rpx;font-size: 35rpx;font-weight: bold}
+.newshop navigator{float: right;margin-right: 10rpx;font-size: 30rpx}
+.more{width: 40rpx;height: 40rpx;vertical-align: middle;padding-bottom: 6rpx}
+.bottomline{display: block;clear: both;border-bottom: 1px solid #eaeaea;width: 90%;margin: 0 auto}
+.displayline{display: inline}
+.shoplist{display: flex;flex-direction: row;justify-content: space-between;flex-wrap:wrap;width: 90%;margin: 30rpx auto 0}
+.shoplist .shopbox{width: 48%;height: 300rpx;margin-bottom: 30rpx;}
+.shoplist .shopbox .img{height: 220rpx;width: 100%;}
+.shoplist .shopbox .text{font-size: 30rpx;overflow: hidden;text-overflow: ellipsis; -o-text-overflow: ellipsis;white-space:nowrap;}
+.shoplist .shopbox .line{width: 40rpx;border-top: 2px solid #338320;margin-top: 10rpx}
+.adimg image{width: 100%;height: 300rpx;margin-bottom: 30rpx}
+.newlist{display: flex;flex-direction: column;overflow: hidden}
+.newlist .newitem{width: 90%;margin: 20rpx auto;height: 200rpx;display: flex;flex-direction: row;justify-content: space-between;}
+.newlist .newitem .flexitemimg{width: 40%}
+.newlist .newitem .flexitemimg image{width: 100%;height: 200rpx}
+.newlist .newitem .flexitem{width: 60%;padding-left: 25rpx}
+.newlist .newitem .flexitem navigator{font-size: 30rpx;font-weight: bold}
+.tiptext{font-size: 20rpx;color: #999}
+

@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<view class="container">
+<!-- 滚动 -->
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{vertical}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item"><image mode="aspectFill" src="../static/img/{{item}}.jpg"></image></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!-- 悬浮导航 -->
+    <view class="barbignav">
+     <view class="barnav">
+      <view class="navitem" wx:for="{{classification}}" wx:key="key">
+       <navigator url="">
+        <image src="{{item.ico}}"></image>
+        <block><view class="textnav">{{item.title}}</view></block>
+       </navigator>
+      </view>
+     </view>
+    </view>
+  </view>
+  <!-- 最新上架 -->
+  <view class="newshop">
+  <view class="line"></view>
+  <view class="texttitle">最新商品</view>
+  <navigator url=""><view class="displayline">查看更多</view><image class="more" src="../static/img/more.png"></image></navigator>
+  </view>
+  <view class="bottomline"></view>
+  <!-- 商品展示 -->
+  <view class="shoplist">
+    <view class="shopbox" wx:for="{{newproduct}}" wx:key="key">
+     <navigator url="">
+      <image class="img" src="{{item.currimg}}"></image>
+      <view class="text">{{item.title}}</view>
+      <view class="line"></view>
+     </navigator>
+    </view>
+  </view>
+  <!-- 图片广告 -->
+  <view class="linebr"></view>
+  <view class="adimg">
+    <image src="{{advimg}}"></image>
+  </view>
+  <view class="linebr"></view>
+  <!-- 最新公告 -->
+  <view class="newshop">
+  <view class="line"></view>
+  <view class="texttitle">平台公告</view>
+  <navigator url=""><view class="displayline">查看更多</view><image class="more" src="../static/img/more.png"></image></navigator>
+  </view>
+  <view class="bottomline"></view>
+  <view class="newlist">
+    <view class="newitem" wx:for="{{messagearray}}" wx:key="key">
+      <view class="flexitemimg"><image src="{{item.newimg}}"></image></view>
+        <view class="flexitem">
+        <navigator url="">{{item.title}}</navigator>
+        <view class="tiptext">{{item.discript}}</view>
+      </view>
+    </view>
+  </view>
+</view>

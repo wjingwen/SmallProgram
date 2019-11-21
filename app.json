@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/shop/shop",
+    "pages/user/user",
+    "pages/cart/cart",
+    "pages/login/login",
+    "pages/register/register"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "马卡龙",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/pages/static/img/home.png",
+        "selectedIconPath": "/pages/static/img/home_active.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "商城",
+        "iconPath": "/pages/static/img/shop.png",
+        "selectedIconPath": "/pages/static/img/shop_active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/pages/static/img/cart.png",
+        "selectedIconPath": "/pages/static/img/cart_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "/pages/static/img/user.png",
+        "selectedIconPath": "/pages/static/img/user_ative.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

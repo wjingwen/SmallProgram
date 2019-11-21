@@ -1,0 +1,36 @@
+<!--pages/shop/shop.wxml-->
+<view class="container">
+<!-- 滚动分类 -->
+    <scroll-view scroll-x class='swiper-nav' scroll-with-animation='true'>
+    　<text wx:for='{{classification}}'  bindtap='swiperNav' wx:key='{{index}}' class='item-nav {{native==index ? "active" : ""}}'  data-i='{{index}}'>{{item.title}}</text>
+    </scroll-view>
+    <!-- 小分类 -->
+    <view class="bigclassshop">
+      <view class="classshop">
+        <view wx:for="{{classlist}}" wx:key='{{index}}' class="classitem">
+         <navigator url="">
+          <image src="{{item.ico}}"></image>
+          <text>{{item.title}}</text>
+         </navigator>
+        </view>
+      </view>
+    </view>
+    <!-- 广告图 -->
+    <view class="adimg">
+     <image src="{{advimg}}"></image>
+    </view>
+    <!-- 更多热卖 -->
+    <view class="hottitle">--更多热卖--</view>
+    <view class="shoplist">
+      <view class="shopitem" wx:for="{{shoplist}}" wx:key='{{index}}'>
+        <navigator url="">
+          <view><image src="{{item.currimg}}"></image></view>
+          <text class="tiptext" wx:if="{{item.hottitle}}">{{item.hottitle}}</text>
+          <view class="shoptitleline"><text>{{item.title}}</text></view>
+          <view class="shoptitle" wx:if="{{item.naticeclassname}}"><text>{{item.naticeclassname}}</text></view>
+          <view class="shoptitletip" wx:if="{{item.naticeclass.length>0}}"><text wx:for="{{item.naticeclass}}" wx:for-index="idx" wx:for-item="itemName" wx:key="{{idx}}">{{itemName}}</text></view>
+          <view class="shopprice" ><text class="cheng rmbico">￥</text><text class="cheng rmbprice">{{item.price}}</text><text class="shoppaynum">{{item.paynum}}人付款</text></view>
+        </navigator>
+      </view>
+    </view>
+</view>
